@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel = "stylesheet" href = "Assets/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript"></script>
     <script src = "Assets/giphy.js"></script>
@@ -12,22 +13,36 @@
 
 </head>
 <body>
+
+    
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="https://sporting-id.com/product/image/medium/910014999999072_artboard%201%20copy%208.png" width="60" height="60" class="d-inline-block align-top" alt="">
+  </a>
+</nav>
+ 
     <div class = "container">
         
         <div id = "button-div"> </div>
 
-        <form id="football-club-form">
+        <div class="row">
+                <div class="col-8">
 
-            <label for="input">Add your team here!</label>
+                        <div id = "giphy-div"></div>
 
-            <input type="text" id="club-input"><br>
+                </div>
 
-            <!-- Button triggers club to be added -->
-            <input id="add-club" type="submit" value="Add Club">
-        </form>
-    
+                <div class="col-4">
 
-         <div id = "giphy-div"></div>
+                    <form id="football-club-form" col-sm-6>
+                        <label for="input">Add your favorite team here!</label>
+                        <input type="text" id="club-input">
+                        <input id="add-club" type = "submit" value="Add Club!">
+                    </form>
+                </div>
+        
+        </div>
+
 
      </div>
 
