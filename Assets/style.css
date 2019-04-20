@@ -7,6 +7,17 @@ background-image: url(https://cdn.theculturetrip.com/wp-content/uploads/2016/08/
 
 }
 
+.nav{
+    color:#5B1E60;
+}
+
+#giphy-div img{
+
+    height: 200px;
+    width: auto;
+
+}
+
 .football-btn{
     background-color: #4CAF50; 
     border: none;
@@ -31,4 +42,31 @@ background-image: url(https://cdn.theculturetrip.com/wp-content/uploads/2016/08/
 
      border-radius: 4px;
       
+}
+
+#add-club{
+
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    cursor: pointer;
+
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+      
+
+     background-color: #008CBA;
+     color: white;
+
+     border-radius: 4px;
+
 }
