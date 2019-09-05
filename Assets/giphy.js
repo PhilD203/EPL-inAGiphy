@@ -44,15 +44,37 @@ $(document).ready(function() {
             for (var i = 0; i < response.data.length; i ++){
                 var imgURL = response.data[i].images.downsized_medium.url;
                 var image = $("<img>").attr("src", imgURL);
+
+                image.attr("data-still", response.data[i].images.downsized_medium.url);
+                image.attr("data-animate", imgURL);
+                image.attr("data-state" , "still");
+                image.addClass("image");
+
                 giphyDiv.append(image);
                 $("#giphy-div").prepend(giphyDiv);
             }
         }); 
     };
-
-    $(document.body).on("click", ".football-btn", displayGIF);
+         $(document.body).on("click", ".football-btn", displayGIF);
 
     addButton();
+
+});
+        $(document).on("click", "img", function () {
+            console.log("img.click");
+
+        var state = $(this).attr("data-state");
+
+        if (state === "still") {
+            $(this).attr("src", $(this).attr("data-animate"));
+            $(this).attr("data-state", "animate");
+
+
+         } else {
+            $(this).attr("src", $(this).attr("data-still"));
+            $(this).attr("data-state", "still");
+
+        }
 
 });
 
